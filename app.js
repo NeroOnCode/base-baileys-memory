@@ -518,7 +518,7 @@ const flowSolicitudV3 = addKeyword(['3'])
             ruc: get_rucV3,
             solicitud: get_soliV3,
         });
-    }, flowDespedidaV2);
+    }, flowDespedidaV3);
 
 const flowServicioV3 = addKeyword(['4'])
     .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
@@ -548,7 +548,7 @@ const flowOtrosV3 = addKeyword(['5'])
             ruc: get_rucV3,
             solicitud: get_soliV3,
         });
-    }, flowDespedidaV2);
+    }, flowDespedidaV3);
 
 
 // Menu
@@ -937,7 +937,7 @@ const flowPrincipalV5 = addKeyword(['Hola quisiera mas información'])
             get_numbV5 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos / Cotizamos?', { capture: true }, (ruc, { fallBack }) => {
+    .addAnswer('¿Con que RUC lo registramos?', { capture: true }, (ruc, { fallBack }) => {
         if (ruc.body.length !== 11) {
             return fallBack()
         } else {
