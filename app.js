@@ -1303,7 +1303,7 @@ const flowPrincipalV7 = addKeyword(['Hola quisiera mas información','hola'])
     }, flowMenuV7)
 //FIN CSI AMBIENTAL
 
-// Flujo, opciones y puerto NO TOCAR
+// Iniciar bots, opciones y puerto *NO TOCAR*
 const mainVENTAS1 = async () => {
     const BOTNAME='VENTAS1'
     const adapterDB = new MockAdapter()
