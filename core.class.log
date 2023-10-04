@@ -2,503 +2,10 @@
   key: {
     remoteJid: '51915041603@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0D0092082B4F1FA9353',
+    id: '3EB0B80AA58B44BD55EB18',
     participant: undefined
   },
-  messageTimestamp: 1696437061,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola quisiera mas información',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola quisiera mas información',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_486a61ff-951c-4285-91fe-935b65cbfc3e',
-  keyword: 'key_13b49956-eabe-4038-a598-e906b0e66fa3',
-  answer: 'Bienvenid@ a *FORSEG PEDIDO SUR*!🧡🦺🛠 Soy 🤖 tu asesor virtual.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '9aa0e09dd7d96a9d4f9024286e246c0e'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9159a55f-8087-4697-acae-9907042b0cb5',
-  keyword: 'ans_486a61ff-951c-4285-91fe-935b65cbfc3e',
-  answer: '¿Con quien tenemos el gusto?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '101923f0012ef9c2859cdbc97836054b'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB04537E4000329331B8B',
-    participant: undefined
-  },
-  messageTimestamp: 1696437065,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'luis lopez',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'luis lopez',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_dc1d8292-40e2-4f2e-b18f-fcce33437b8e',
-  keyword: 'ans_9159a55f-8087-4697-acae-9907042b0cb5',
-  answer: '¿Con que RUC lo registramos / Cotizamos?\n' +
-    'Si cuenta con RUC 10 ingrese su *Domicio Fiscal*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '54ed31a51a27e6c69720b101ac1d1f14'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0A8F1FCA746B034DF5E',
-    participant: undefined
-  },
-  messageTimestamp: 1696437078,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '12345678 x',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '12345678 x',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_4c1624a4-386f-4ae0-918c-691f0450301b',
-  keyword: 'ans_dc1d8292-40e2-4f2e-b18f-fcce33437b8e',
-  answer: '¿En que zona de Lima le llevamos| provincia le enviamos el pedido?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'dbd44e14a9828befe1f3f6c01d206ad4'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB02E06E7934878471DD0',
-    participant: undefined
-  },
-  messageTimestamp: 1696437088,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'San Miguel',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'San Miguel',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c2a00caf-3880-4abc-95e2-d966de3c316d',
-  keyword: 'key_599acef2-8a59-463e-bc9b-c4b8a90c5061',
-  answer: '¿Cómo podemos ayudarte?\n' +
-    '👉 1️⃣ Deseo cotizar\n' +
-    '👉 2️⃣ Quiero productos de EPPs y señalización \n' +
-    '👉 3️⃣ Necesito asesoria tecnica en caracteristicas, especificaciones y uso de EPPs\n' +
-    '👉 4️⃣ Requiero una presentación de muestras en mi centro comercial\n' +
-    '👉 5️⃣ Otros\n' +
-    'Escribe la opción que deseas✍️',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object]
-    ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'ea741b03aad598d2789b5c3cd49bf649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB055391FD57D700879D5',
-    participant: undefined
-  },
-  messageTimestamp: 1696437092,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '2',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_7fc92934-ae44-4f0f-ab54-0f14c9eae42a',
-  keyword: 'key_7b671bc2-e663-4d91-a2fb-4ea3d9bff241',
-  answer: '¿Qué productos de EPPs, señalización requiere?\n' +
-    'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)\n' +
-    'Si es muy amable de enviar una imagen',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [ [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'eb2d5ce01a509f9d1e139035671175a7'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB06420F029D0A8FF902E',
-    participant: undefined
-  },
-  messageTimestamp: 1696437100,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '2 mascariilas, marca NIKE, talla 23, Modelo alcatraz',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2 mascariilas, marca NIKE, talla 23, Modelo alcatraz',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c65d5009-0c25-4cb9-941b-7e9abe1c26b6',
-  keyword: 'key_7bf0bf98-bb9e-4b22-b975-8eeb188aa71d',
-  answer: 'Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '291918474aa0389f76eb95e9d2f77cca'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_86e584dc-5448-40d7-9514-043bbc92fe91',
-  keyword: 'ans_c65d5009-0c25-4cb9-941b-7e9abe1c26b6',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'c19d798f21b0b0b582a47fd341cd9a17'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_b57b2bbb-cf78-452f-a4f1-160cb55e7676',
-  keyword: 'ans_86e584dc-5448-40d7-9514-043bbc92fe91',
-  answer: 'Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia\n' +
-    'https://forms.gle/eeNZVRQGKVNEhgYr6',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 5000,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '5eab1c348cac46904c2cc2773be05e62'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C31FC590C3D4216855',
-    participant: undefined
-  },
-  messageTimestamp: 1696437119,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola quisiera mas información',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola quisiera mas información',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_486a61ff-951c-4285-91fe-935b65cbfc3e',
-  keyword: 'key_13b49956-eabe-4038-a598-e906b0e66fa3',
-  answer: 'Bienvenid@ a *FORSEG PEDIDO SUR*!🧡🦺🛠 Soy 🤖 tu asesor virtual.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '9aa0e09dd7d96a9d4f9024286e246c0e'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9159a55f-8087-4697-acae-9907042b0cb5',
-  keyword: 'ans_486a61ff-951c-4285-91fe-935b65cbfc3e',
-  answer: '¿Con quien tenemos el gusto?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '101923f0012ef9c2859cdbc97836054b'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C0BAC7FC9C99E25CC0',
-    participant: undefined
-  },
-  messageTimestamp: 1696437132,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Luis Lopez',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Luis Lopez',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_dc1d8292-40e2-4f2e-b18f-fcce33437b8e',
-  keyword: 'ans_9159a55f-8087-4697-acae-9907042b0cb5',
-  answer: '¿Con que RUC lo registramos / Cotizamos?\n' +
-    'Si cuenta con RUC 10 ingrese su *Domicio Fiscal*',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '54ed31a51a27e6c69720b101ac1d1f14'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB02E933C507018220FE9',
-    participant: undefined
-  },
-  messageTimestamp: 1696437138,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '12345678 x',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '12345678 x',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_4c1624a4-386f-4ae0-918c-691f0450301b',
-  keyword: 'ans_dc1d8292-40e2-4f2e-b18f-fcce33437b8e',
-  answer: '¿En que zona de Lima le llevamos| provincia le enviamos el pedido?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [ [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'dbd44e14a9828befe1f3f6c01d206ad4'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB099831A8B042E4816E0',
-    participant: undefined
-  },
-  messageTimestamp: 1696437143,
-  pushName: 'Luis López 🤓',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'San Juan',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'San Juan',
-  from: '51915041603'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c2a00caf-3880-4abc-95e2-d966de3c316d',
-  keyword: 'key_599acef2-8a59-463e-bc9b-c4b8a90c5061',
-  answer: '¿Cómo podemos ayudarte?\n' +
-    '👉 1️⃣ Deseo cotizar\n' +
-    '👉 2️⃣ Quiero productos de EPPs y señalización \n' +
-    '👉 3️⃣ Necesito asesoria tecnica en caracteristicas, especificaciones y uso de EPPs\n' +
-    '👉 4️⃣ Requiero una presentación de muestras en mi centro comercial\n' +
-    '👉 5️⃣ Otros\n' +
-    'Escribe la opción que deseas✍️',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object]
-    ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'ea741b03aad598d2789b5c3cd49bf649'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '51915041603@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C5C8A7B2C9A15AC11D',
-    participant: undefined
-  },
-  messageTimestamp: 1696437148,
+  messageTimestamp: 1696437984,
   pushName: 'Luis López 🤓',
   broadcast: false,
   message: Message {
@@ -516,8 +23,8 @@
   from: '51915041603'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_09869f81-4fa8-44fa-815a-074254422b8f',
-  keyword: 'key_28d798e6-247f-4f88-843e-5275ca35738a',
+  ref: 'ans_acd31203-639d-4966-8a63-f08474ba5e0f',
+  keyword: 'key_24d2711e-25d8-47e0-9125-3894e9264a82',
   answer: '¿Qué productos desea que le cotize?\n' +
     'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia',
   options: {
@@ -530,21 +37,21 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '15bfdc7aded895177c3599653e8ef15e'
+  refSerialize: 'bd3c2e71ea9a3d237747c7aa4e43fb10'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '51915041603@s.whatsapp.net',
     fromMe: false,
-    id: '3EB05E029AC13B54BCB594',
+    id: '3EB00722306B695DBC07C3',
     participant: undefined
   },
-  messageTimestamp: 1696437179,
+  messageTimestamp: 1696437997,
   pushName: 'Luis López 🤓',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: '2 mascariilas, talla 23',
+      text: 'mascarilla, 23, caja',
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
     },
@@ -553,12 +60,12 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: '2 mascariilas, talla 23',
+  body: 'mascarilla, 23, caja',
   from: '51915041603'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_62186649-6c40-461c-8e0e-71a27830e04d',
-  keyword: 'key_826a5ead-2544-46b2-856f-0c6f4bb5c031',
+  ref: 'ans_4ea2d2e4-84f4-4f33-9067-5a0309826950',
+  keyword: 'key_c3c81744-312f-4dda-8e96-bccc9bb74216',
   answer: 'Listo! *En breves momentos le estaremos enviando su cotizacion realizada*🤖',
   options: {
     media: null,
@@ -570,11 +77,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'ea015b5720708b1849c838b5049f350b'
+  refSerialize: 'a85c02eb0d96123cdc049a6487d56c50'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_46733531-8163-4130-af65-a951ad98d521',
-  keyword: 'ans_62186649-6c40-461c-8e0e-71a27830e04d',
+  ref: 'ans_24d668e4-d152-46be-a246-96517f4a8587',
+  keyword: 'ans_4ea2d2e4-84f4-4f33-9067-5a0309826950',
   answer: '__call_action__',
   options: {
     media: null,
@@ -586,11 +93,53 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '25f704ea9208936063081914e2498166'
+  refSerialize: 'a732f46edd6e8c5d08f9dee1465b0a79'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '51915041603@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB00764184E88678C453D',
+    participant: undefined
+  },
+  messageTimestamp: 1696438001,
+  pushName: 'Luis López 🤓',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '2',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '51915041603'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d6e4e7a4-d84a-4728-b32b-2218bad16fb3',
-  keyword: 'ans_46733531-8163-4130-af65-a951ad98d521',
+  ref: 'ans_6ee984ae-91fe-4cdf-9983-e0b5ccb64d00',
+  keyword: 'key_5f8782a0-e513-4a53-bc89-417682ced663',
+  answer: '¿Qué productos de EPPs, señalización requiere?\n' +
+    'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)\n' +
+    'Si es muy amable de enviar una imagen',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'ccd29e8752c6ec35975dd916ddbf2b79'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e11fdb9d-b9ba-472b-b4ff-5dd56943f710',
+  keyword: 'ans_24d668e4-d152-46be-a246-96517f4a8587',
   answer: 'Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia\n' +
     'https://forms.gle/eeNZVRQGKVNEhgYr6',
   options: {
@@ -603,5 +152,259 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b04001b42678bc029ad4bab71c6e84d1'
+  refSerialize: '70d97586365596bf30fec1aeabe44970'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '51915041603@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB09BC7F4B9503C82740A',
+    participant: undefined
+  },
+  messageTimestamp: 1696438014,
+  pushName: 'Luis López 🤓',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'mascarilla 2',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'mascarilla 2',
+  from: '51915041603'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6ee984ae-91fe-4cdf-9983-e0b5ccb64d00',
+  keyword: 'key_5f8782a0-e513-4a53-bc89-417682ced663',
+  answer: '¿Qué productos de EPPs, señalización requiere?\n' +
+    'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)\n' +
+    'Si es muy amable de enviar una imagen',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'ccd29e8752c6ec35975dd916ddbf2b79'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '51915041603@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0253517D8E1BB964B16',
+    participant: undefined
+  },
+  messageTimestamp: 1696438024,
+  pushName: 'Luis López 🤓',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'mascarilla',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'mascarilla',
+  from: '51915041603'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c21c4a47-5a86-4672-b5a7-fdf3ecda423d',
+  keyword: 'key_50833069-26d5-4b8b-a5d1-91c07cb27af1',
+  answer: 'Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'e86f6990061a4b660f840009822c7676'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c6a00aec-fc29-4b9f-80a9-39dd03652ff2',
+  keyword: 'ans_c21c4a47-5a86-4672-b5a7-fdf3ecda423d',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'ffca106958b92ea97b02d46e24751196'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '51915041603@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0E29086F222317BFCC9',
+    participant: undefined
+  },
+  messageTimestamp: 1696438028,
+  pushName: 'Luis López 🤓',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '3',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '51915041603'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9064dca7-f94f-40d6-89b8-6fad4ef9d3a1',
+  keyword: 'key_93ec8601-14d5-4f5a-8988-342353683ab1',
+  answer: '¿En qué necesita asesoramiento?\n' +
+    'En breve lo estaremos atendiendo\n' +
+    'Si es muy amable de enviar una imagen',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    nested: [ [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd280373966d2f3c1c219ac5ab3525128'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_01deb2bc-d2d8-4de6-b987-2e9c5c9e675b',
+  keyword: 'ans_c6a00aec-fc29-4b9f-80a9-39dd03652ff2',
+  answer: 'Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia\n' +
+    'https://forms.gle/eeNZVRQGKVNEhgYr6',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 5000,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '7e668b31bb18c7cb881c1ee258071eac'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '51915041603@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0A9C2F89244F1905A23',
+    participant: undefined
+  },
+  messageTimestamp: 1696438033,
+  pushName: 'Luis López 🤓',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'ayuda',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ayuda',
+  from: '51915041603'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b087f4ce-1fb4-40b6-8296-4a679edf5dfe',
+  keyword: 'key_d4f50ecb-a607-4da7-8fd5-6076921d3443',
+  answer: '¿Qué necesita?\nEn breve lo estaremos atendiendo',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    nested: [ [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'c11fdd6e07f6ca10fa8c45ed66c04e57'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '51915041603@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B806C6FDA13B815CF6',
+    participant: undefined
+  },
+  messageTimestamp: 1696438038,
+  pushName: 'Luis López 🤓',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'ayuda',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ayuda',
+  from: '51915041603'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_dc08b877-160a-44f5-9d5d-1ed787c17456',
+  keyword: 'key_a6547ccf-abd4-49dc-bd40-e728f28d2bf5',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '9183d146f41179ca747d928b96725cd5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_853aaf28-6215-4da3-b121-7a54ee97ab25',
+  keyword: 'ans_dc08b877-160a-44f5-9d5d-1ed787c17456',
+  answer: 'Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia\n' +
+    'https://forms.gle/eeNZVRQGKVNEhgYr6',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 5000,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '0eb57fe3168bfc3f451eebf67eefb0e0'
 }
