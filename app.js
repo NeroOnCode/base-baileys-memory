@@ -211,7 +211,7 @@ const flowMenuV1 = addKeyword(get_zonaV1)
     );
 
 // Saludo, Captura de datos del cliente
-const flowPrincipalV1 = addKeyword(['Hola quisiera mas información','hola'])
+const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
     .addAnswer('Bienvenid@ a *FORSEG PEDIDO NORTE*!🧡🦺🛠 Soy 🤖 tu asesor virtual.')
     .addAnswer('¿Con quien tenemos el gusto?', { capture: true }, (datos, { fallBack }) => {
         if (datos.body.length <= 1) {
@@ -389,7 +389,7 @@ const flowMenuV2 = addKeyword(get_zonaV2)
     );
 
 // Saludo, Captura de datos del cliente
-const flowPrincipalV2 = addKeyword(['Hola quisiera mas información','hola'])
+const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
     .addAnswer('Bienvenid@ a *FORSEG PEDIDO SUR*!🧡🦺🛠 Soy 🤖 tu asesor virtual.')
     .addAnswer('¿Con quien tenemos el gusto?', { capture: true }, (datos, { fallBack }) => {
         if (datos.body.length <= 1) {
@@ -567,7 +567,7 @@ const flowMenuV3 = addKeyword(get_zonaV3)
     );
 
 // Saludo, Captura de datos del cliente
-const flowPrincipalV3 = addKeyword(['Hola quisiera mas información','hola'])
+const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
     .addAnswer('Bienvenid@ a *FORSEG PEDIDO LIMA / CENTRO ORIENTE*!🧡🦺🛠 Soy 🤖 tu asesor virtual.')
     .addAnswer('¿Con quien tenemos el gusto?', { capture: true }, (datos, { fallBack }) => {
         if (datos.body.length <= 1) {
@@ -747,7 +747,7 @@ const flowMenuV4 = addKeyword(get_zonaV4)
     );
 
 // Saludo, Captura de datos del cliente
-const flowPrincipalV4 = addKeyword(['Hola quisiera mas información','hola'])
+const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
     .addAnswer('Bienvenid@ a *HORACIO EPP*!🧡🦺🛠 Soy 🤖 tu asesor virtual.')
     .addAnswer('¿Con quien tenemos el gusto?', { capture: true }, (datos, { fallBack }) => {
         if (datos.body.length <= 1) {
@@ -1273,7 +1273,7 @@ const flowMenuV7 = addKeyword(get_zonaV7)
     );
 
 // Saludo, Captura de datos del cliente
-const flowPrincipalV7 = addKeyword(['Hola quisiera mas información','hola'])
+const flowPrincipalV7 = addKeyword(['Hola quisiera mas información'])
     .addAnswer('Bienvenid@ a *CSI AMBIENTAL*!🌎 Soy 🤖 tu asesor virtual.')
     .addAnswer('¿Con quien tenemos el gusto?', { capture: true }, (datos, { fallBack }) => {
         if (datos.body.length <= 1) {
