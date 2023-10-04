@@ -836,8 +836,8 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
         if (datos.body.length <= 1) {
             return fallBack()
         } else {
-            console.log("Datos del cliente:", datos.body, datos.from)
             get_nombreV4 = datos.body;
+            console.log("Datos del cliente:", datos.body, datos.from)
             get_numbV4 = datos.from;
         }
     })
@@ -850,7 +850,7 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de Las Malvinas le llevamos el producto'], { capture: true }, (zona) => {
+    .addAnswer(['¿En qué zona de Las Malvinas le llevamos el producto?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
