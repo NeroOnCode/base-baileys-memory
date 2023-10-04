@@ -850,7 +850,7 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Las Malvinas le llevamos el producto'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
