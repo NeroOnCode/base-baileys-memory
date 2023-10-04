@@ -115,7 +115,7 @@ const flowDespedidaV1 = addKeyword([get_soliV1])
 
 //Opciones del menu
 const flowPedidosV1 = addKeyword(['2'])
-    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log("El cliente solicita:", solicitud.body)
         addAnswer('Anotado')
         get_soliV1 = solicitud.body
@@ -149,7 +149,7 @@ const flowCotizacionV1 = addKeyword(['1'])
     }, flowDespedidaV1);
 
 const flowSolicitudV1 = addKeyword(['3'])
-    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Consulta de', get_nombreV1, '|', solicitud.body)
         get_soliV1 = solicitud.body
 
@@ -165,7 +165,7 @@ const flowSolicitudV1 = addKeyword(['3'])
     }, flowDespedidaV1);
 
 const flowServicioV1 = addKeyword(['4'])
-    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Pedido de Servicio al cliente de', get_nombreV1, '|', solicitud.body);
         get_soliV1 = solicitud.body
         //Guardar datos
@@ -222,8 +222,8 @@ const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
             get_numbV1 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos / Cotizamos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -231,7 +231,7 @@ const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -293,7 +293,7 @@ const flowDespedidaV2 = addKeyword([get_soliV2])
 
 //Opciones del menu
 const flowPedidosV2 = addKeyword(['2'])
-    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log("El cliente solicita:", solicitud.body)
         addAnswer('Anotado')
         get_soliV2 = solicitud.body
@@ -327,7 +327,7 @@ const flowCotizacionV2 = addKeyword(['1'])
     }, flowDespedidaV2);
 
 const flowSolicitudV2 = addKeyword(['3'])
-    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Consulta de', get_nombreV2, '|', solicitud.body)
         get_soliV2 = solicitud.body
 
@@ -343,7 +343,7 @@ const flowSolicitudV2 = addKeyword(['3'])
     }, flowDespedidaV2);
 
 const flowServicioV2 = addKeyword(['4'])
-    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Pedido de Servicio al cliente de', get_nombreV2, '|', solicitud.body);
         get_soliV2 = solicitud.body
         //Guardar datos
@@ -400,8 +400,8 @@ const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
             get_numbV2 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos / Cotizamos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -409,7 +409,7 @@ const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -471,7 +471,7 @@ const flowDespedidaV3 = addKeyword([get_soliV3])
 
 //Opciones del menu
 const flowPedidosV3 = addKeyword(['2'])
-    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log("El cliente solicita:", solicitud.body)
         addAnswer('Anotado')
         get_soliV3 = solicitud.body
@@ -505,7 +505,7 @@ const flowCotizacionV3 = addKeyword(['1'])
     }, flowDespedidaV3);
 
 const flowSolicitudV3 = addKeyword(['3'])
-    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Consulta de', get_nombreV3, '|', solicitud.body)
         get_soliV3 = solicitud.body
 
@@ -521,7 +521,7 @@ const flowSolicitudV3 = addKeyword(['3'])
     }, flowDespedidaV3);
 
 const flowServicioV3 = addKeyword(['4'])
-    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Pedido de Servicio al cliente de', get_nombreV3, '|', solicitud.body);
         get_soliV3 = solicitud.body
         //Guardar datos
@@ -578,8 +578,8 @@ const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
             get_numbV3 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos / Cotizamos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -587,7 +587,7 @@ const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -651,7 +651,7 @@ const flowDespedidaV4 = addKeyword([get_soliV4])
 
 //Opciones del menu
 const flowPedidosV4 = addKeyword(['2'])
-    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿Qué productos de EPPs, señalización requiere?', 'Escriba el producto y la cantidad deseada en un solo mensaje (Si tiene una Marca | Talla | Modelo no dudes en enviarlo)','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log("El cliente solicita:", solicitud.body)
         addAnswer('Anotado')
         get_soliV4 = solicitud.body
@@ -685,7 +685,7 @@ const flowCotizacionV4 = addKeyword(['1'])
     }, flowDespedidaV4);
 
 const flowSolicitudV4 = addKeyword(['3'])
-    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Consulta de', get_nombreV4, '|', solicitud.body)
         get_soliV4 = solicitud.body
 
@@ -701,7 +701,7 @@ const flowSolicitudV4 = addKeyword(['3'])
     }, flowDespedidaV4);
 
 const flowServicioV4 = addKeyword(['4'])
-    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿En donde le mandamos nuestras muestras?', 'En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
         console.log('Pedido de Servicio al cliente de', get_nombreV4, '|', solicitud.body);
         get_soliV4 = solicitud.body
         //Guardar datos
@@ -758,8 +758,8 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
             get_numbV4 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC le cotizamos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -767,7 +767,7 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -937,8 +937,8 @@ const flowPrincipalV5 = addKeyword(['Hola quisiera mas información'])
             get_numbV5 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -1115,8 +1115,8 @@ const flowPrincipalV6 = addKeyword(['Hola quisiera mas información'])
             get_numbV6 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos / Cotizamos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -1124,7 +1124,7 @@ const flowPrincipalV6 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -1284,8 +1284,8 @@ const flowPrincipalV7 = addKeyword(['Hola quisiera mas información'])
             get_numbV7 = datos.from;
         }
     })
-    .addAnswer('¿Con que RUC lo registramos / Cotizamos?', { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length !== 11) {
+    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+        if (ruc.body.length < 8) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -1293,7 +1293,7 @@ const flowPrincipalV7 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
