@@ -104,7 +104,7 @@ const datosRecopiladosV1 = [];
 
 //Despedida del bot e ingresar datos a un excel
 const flowDespedidaV1 = addKeyword([get_soliV1])
-    .addAnswer('Anotado!🤖')
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare!🤖')
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
         VENTAS1(datosRecopiladosV1, get_numbV1);
@@ -231,7 +231,7 @@ const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -282,7 +282,7 @@ const datosRecopiladosV2 = [];
 
 //Despedida del bot e ingresar datos a un excel
 const flowDespedidaV2 = addKeyword([get_soliV2])
-    .addAnswer('Anotado!🤖')
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
         VENTAS2(datosRecopiladosV2, get_numbV2);
@@ -409,7 +409,7 @@ const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -460,7 +460,7 @@ const datosRecopiladosV3 = [];
 
 //Despedida del bot e ingresar datos a un excel
 const flowDespedidaV3 = addKeyword([get_soliV3])
-    .addAnswer('Anotado!🤖')
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
         VENTAS3(datosRecopiladosV3, get_numbV3);
@@ -587,7 +587,7 @@ const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -638,7 +638,7 @@ const datosRecopiladosV4 = [];
 
 
 const flowDespedidaV4 = addKeyword([get_soliV4])
-    .addAnswer('Anotado!🤖')
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
         HORACIO(datosRecopiladosV4, get_numbV4);
@@ -767,7 +767,7 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -1124,7 +1124,7 @@ const flowPrincipalV6 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -1293,7 +1293,7 @@ const flowPrincipalV7 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
