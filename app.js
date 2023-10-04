@@ -101,6 +101,26 @@ async function VENTAS1(data) {
 // Array para almacenar los datos recopilados
 const datosRecopiladosV1 = [];
 
+const flowDespedidaV1P = addKeyword([get_soliV1])
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        VENTAS1(datosRecopiladosV1, get_numbV1);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })
+
+const flowDespedidaV1C = addKeyword([get_soliV1])
+    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada*🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        VENTAS1(datosRecopiladosV1, get_numbV1);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })   
+
 
 //Despedida del bot e ingresar datos a un excel
 const flowDespedidaV1 = addKeyword([get_soliV1])
@@ -128,8 +148,7 @@ const flowPedidosV1 = addKeyword(['2'])
             ruc: get_rucV1,
             solicitud: get_soliV1,
         });
-    })
-    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖',flowDespedidaV1)
+    },flowDespedidaV1P);
 
 const flowCotizacionV1 = addKeyword(['1'])
     .addAnswer(['¿Qué productos desea que le cotize?', 'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia'], { capture: true }, (solicitud) => {
@@ -146,8 +165,7 @@ const flowCotizacionV1 = addKeyword(['1'])
             ruc: get_rucV1,
             solicitud: get_soliV1,
         });
-    })
-    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada*🤖')
+    },flowDespedidaV1C);
 
 const flowSolicitudV1 = addKeyword(['3'])
     .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
@@ -282,6 +300,26 @@ const datosRecopiladosV2 = [];
 
 
 //Despedida del bot e ingresar datos a un excel
+const flowDespedidaV2P = addKeyword([get_soliV2])
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        VENTAS2(datosRecopiladosV2, get_numbV2);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })
+
+const flowDespedidaV2C = addKeyword([get_soliV2])
+    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada*🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        VENTAS2(datosRecopiladosV2, get_numbV2);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })   
+
 const flowDespedidaV2 = addKeyword([get_soliV2])
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
@@ -290,6 +328,8 @@ const flowDespedidaV2 = addKeyword([get_soliV2])
     .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
         delay: 5000
     })
+
+ 
 
 //Opciones del menu
 const flowPedidosV2 = addKeyword(['2'])
@@ -307,8 +347,8 @@ const flowPedidosV2 = addKeyword(['2'])
             ruc: get_rucV2,
             solicitud: get_soliV2,
         });
-    })
-    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖',flowDespedidaV2)
+    },flowDespedidaV2P);
+    
 
 const flowCotizacionV2 = addKeyword(['1'])
     .addAnswer(['¿Qué productos desea que le cotize?', 'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia'], { capture: true }, (solicitud) => {
@@ -325,8 +365,7 @@ const flowCotizacionV2 = addKeyword(['1'])
             ruc: get_rucV2,
             solicitud: get_soliV2,
         });
-    })
-    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada*🤖')
+    },flowDespedidaV2C)
 
 const flowSolicitudV2 = addKeyword(['3'])
     .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
@@ -459,6 +498,26 @@ async function VENTAS3(data) {
 // Array para almacenar los datos recopilados
 const datosRecopiladosV3 = [];
 
+const flowDespedidaV3P = addKeyword([get_soliV3])
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        VENTAS3(datosRecopiladosV3, get_numbV3);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })
+
+const flowDespedidaV3C = addKeyword([get_soliV3])
+    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        VENTAS3(datosRecopiladosV3, get_numbV3);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })
+
 
 //Despedida del bot e ingresar datos a un excel
 const flowDespedidaV3 = addKeyword([get_soliV3])
@@ -469,6 +528,7 @@ const flowDespedidaV3 = addKeyword([get_soliV3])
     .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
         delay: 5000
     })
+
 
 //Opciones del menu
 const flowPedidosV3 = addKeyword(['2'])
@@ -486,8 +546,8 @@ const flowPedidosV3 = addKeyword(['2'])
             ruc: get_rucV3,
             solicitud: get_soliV3,
         });
-    })
-    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖',flowDespedidaV3)
+    },flowDespedidaV3P);
+    
 
 const flowCotizacionV3 = addKeyword(['1'])
     .addAnswer(['¿Qué productos desea que le cotize?', 'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia'], { capture: true }, (solicitud) => {
@@ -504,8 +564,8 @@ const flowCotizacionV3 = addKeyword(['1'])
             ruc: get_rucV3,
             solicitud: get_soliV3,
         });
-    })
-    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada🤖',flowDespedidaV3)
+    },flowDespedidaV3C);
+    
 
 const flowSolicitudV3 = addKeyword(['3'])
     .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
@@ -639,6 +699,25 @@ async function HORACIO(data) {
 // Array para almacenar los datos recopilados
 const datosRecopiladosV4 = [];
 
+const flowDespedidaV4P = addKeyword([get_soliV4])
+    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        HORACIO(datosRecopiladosV4, get_numbV4);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })
+
+const flowDespedidaV4C = addKeyword([get_soliV4])
+    .addAnswer('Listo! *En breve momentos le estaremos enviado su cotizacion realizada🤖')
+    .addAction(() => {
+        // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
+        HORACIO(datosRecopiladosV4, get_numbV4);
+    })
+    .addAnswer(['Para poder darte un servicio cada vez mejor y atenderte de acuerdo a tus necesidades, por favor, cuéntanos tu experiencia', 'https://forms.gle/eeNZVRQGKVNEhgYr6'], {
+        delay: 5000
+    })
 
 const flowDespedidaV4 = addKeyword([get_soliV4])
     .addAction(() => {
@@ -667,8 +746,8 @@ const flowPedidosV4 = addKeyword(['2'])
             ruc: get_rucV4,
             solicitud: get_soliV4,
         });
-    })
-    .addAnswer('Revisando *stock disponible y las mejores ofertas para usted*, en breve le confirmare🤖',flowDespedidaV4)
+    },flowDespedidaV4P)
+    
 
 const flowCotizacionV4 = addKeyword(['1'])
     .addAnswer(['¿Qué productos desea que le cotize?', 'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia'], { capture: true }, (solicitud) => {
@@ -685,8 +764,8 @@ const flowCotizacionV4 = addKeyword(['1'])
             ruc: get_rucV4,
             solicitud: get_soliV4,
         });
-    })
-    .addAnswer('Listo! *En breve momentos le estaremos enviado su cotizacion realizada🤖',flowDespedidaV4)
+    },flowDespedidaV4C)
+
 
 const flowSolicitudV4 = addKeyword(['3'])
     .addAnswer(['¿En qué necesita asesoramiento?','En breve lo estaremos atendiendo','Si es muy amable de enviar una imagen'], { capture: true }, (solicitud) => {
