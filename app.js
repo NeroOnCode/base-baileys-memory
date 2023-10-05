@@ -241,7 +241,7 @@ const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
             get_numbV1 = datos.from;
         }
     })
-    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+    .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
         if (ruc.body.length < 8) {
             return fallBack()
         } else {
@@ -250,7 +250,7 @@ const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En qué zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -441,7 +441,7 @@ const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
             get_numbV2 = datos.from;
         }
     })
-    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+    .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
         if (ruc.body.length < 8) {
             return fallBack()
         } else {
@@ -450,7 +450,7 @@ const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de Lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En qué zona de Lima le llevamos| provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -550,7 +550,7 @@ const flowPedidosV3 = addKeyword(['2'])
     
 
 const flowCotizacionV3 = addKeyword(['1'])
-    .addAnswer(['¿Qué productos desea que le cotize?', 'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia'], { capture: true }, (solicitud) => {
+    .addAnswer(['¿Qué productos desea qué le cotize?', 'Escriba el producto, cantidad, tallas y si es muy amable una imagen de referencia'], { capture: true }, (solicitud) => {
         console.log('El cliente', get_nombreV3, 'solicita lo siguiente:', solicitud.body);
         addAnswer('Anotado');
         get_soliV3 = solicitud.body
@@ -641,7 +641,7 @@ const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
             get_numbV3 = datos.from;
         }
     })
-    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+    .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
         if (ruc.body.length < 8) {
             return fallBack()
         } else {
@@ -650,7 +650,7 @@ const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
         }
         // Agrega los datos al array cuando se recopila el RUC
     })
-    .addAnswer(['¿En que zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
+    .addAnswer(['¿En qué zona de Lima le llevamos | provincia le enviamos el pedido?'], { capture: true }, (zona) => {
         if (zona.body.length < 1) {
             return fallBack()
         } else {
@@ -841,7 +841,7 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
             get_numbV4 = datos.from;
         }
     })
-    .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
+    .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
         if (ruc.body.length < 8) {
             return fallBack()
         } else {
