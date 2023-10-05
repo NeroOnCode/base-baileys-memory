@@ -1091,7 +1091,7 @@ const flowDespedidaV6 = addKeyword([get_soliV6])
 
 //Opciones del menu
 const flowSUCAMECV6 = addKeyword(['2'])
-    .addAnswer(['En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
+    .addAnswer(['Envie los datos necesarios','En breve lo estaremos atendiendo'], { capture: true }, (solicitud) => {
         console.log("El cliente solicita:", solicitud.body)
         addAnswer('Anotado')
         get_soliV6 = solicitud.body
