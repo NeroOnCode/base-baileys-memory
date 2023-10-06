@@ -242,7 +242,7 @@ const flowPrincipalV1 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -442,7 +442,7 @@ const flowPrincipalV2 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -642,7 +642,7 @@ const flowPrincipalV3 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -842,7 +842,7 @@ const flowPrincipalV4 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con qué RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -1021,7 +1021,7 @@ const flowPrincipalV5 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -1199,7 +1199,7 @@ const flowPrincipalV6 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
@@ -1368,7 +1368,7 @@ const flowPrincipalV7 = addKeyword(['Hola quisiera mas información'])
         }
     })
     .addAnswer(['¿Con que RUC lo registramos / Cotizamos?','Si cuenta con RUC 10 ingrese su *Domicio Fiscal*'], { capture: true }, (ruc, { fallBack }) => {
-        if (ruc.body.length < 8) {
+        if (ruc.body.length < 9) {
             return fallBack()
         } else {
             console.log("RUC del cliente:", ruc.body);
