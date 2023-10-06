@@ -509,7 +509,7 @@ const flowDespedidaV3P = addKeyword([get_soliV3])
     })
 
 const flowDespedidaV3C = addKeyword([get_soliV3])
-    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada🤖')
+    .addAnswer('Listo! *En breves momentos le estaremos enviando su cotizacion realizada*🤖')
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
         VENTAS3(datosRecopiladosV3, get_numbV3);
@@ -710,7 +710,7 @@ const flowDespedidaV4P = addKeyword([get_soliV4])
     })
 
 const flowDespedidaV4C = addKeyword([get_soliV4])
-    .addAnswer('Listo! *En breve momentos le estaremos enviado su cotizacion realizada🤖')
+    .addAnswer('Listo! *En breve momentos le estaremos enviado su cotizacion realizada*🤖')
     .addAction(() => {
         // Llama a la función para guardar los datos en Excel específico para el número de teléfono del usuario cuando termina el flujo de despedida
         HORACIO(datosRecopiladosV4, get_numbV4);
